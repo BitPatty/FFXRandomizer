@@ -40,14 +40,14 @@ function scrambleGrid() {
   const RANDOM_ABILITIES = document.getElementById("scramble-abilities")
     .checked;
 
-  const TIDUS_NAME = document.getElementById("tidus-name").value;
+  var TIDUS_NAME = document.getElementById("tidus-name").value;
 
   const FLEE = document.getElementById("enable-flee").checked;
 
   const STANDARDGRID =
     document.getElementById("grid-select").value === "Standard";
 
-  const STATUS_MSG = document.getElementById("generator-status");
+  var STATUS_MSG = document.getElementById("generator-status");
   const STATUS_CHECK = ' <span style="color:#6fda96">✔ </span><br />';
 
   STATUS_MSG.innerHTML = "Requesting template...";
