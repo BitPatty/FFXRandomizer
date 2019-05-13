@@ -896,7 +896,7 @@ function scrambleGrid() {
       }
 
       if (document.getElementById("version-select").value === "Switch") {
-        SAVEFILE = applySwitchPatch(SAVEFILE);
+        applySwitchPatch(SAVEFILE);
       }
 
       //Save file
@@ -932,22 +932,16 @@ function scrambleGrid() {
 function applySwitchPatch(data) {
   let timestamp = Math.floor((new Date()).getTime() / 1000);
 
-  let pd;
-  Object.assign(pd, data);
-
-  pd.reverse();
-
-  for (let i = 0; i < 8; i++) {
-    pd.push((timestamp >>> (i * 8)) & 0xFF)
+  for (let i = data.length - 1; i > 7; i--) {
+    data[i] = data[i - 8];
   }
 
-  pd.reverse();
-
-  for (let i = 0; i < 8; i++) {
-    pd.pop();
+  for (let i = 0; i < 4; i++) {
+    data[i] = (timestamp >>> (i * 8)) & 0xFF;
+    data[i + 4] = 0;
   }
 
-  return pd;
+  return data;
 }
 
 //Shuffle Array https://github.com/Daplie/knuth-shuffle/blob/master/index.js
