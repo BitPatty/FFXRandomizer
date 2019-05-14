@@ -939,8 +939,6 @@ function applySwitchPatch(data) {
     data[i] = (timestamp >>> (i * 8)) & 0xFF;
     data[i + 4] = 0;
   }
-
-  return data;
 }
 
 //Shuffle Array https://github.com/Daplie/knuth-shuffle/blob/master/index.js
