@@ -22,6 +22,10 @@ main {
 
     margin-bottom: 15px;
   }
+
+  .guide {
+    margin-top: 30px;
+  }
 }
 
 .dark {
@@ -48,4 +52,18 @@ main {
       }
     }
   }
+}
+
+.site-description {
+  a {
+    color: #44ffb3;
+
+    &:hover {
+      color: #93ffd3;
+    }
+  }
+}
+
+body {
+  padding-bottom: 30px;
 }

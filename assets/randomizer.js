@@ -856,7 +856,7 @@ function scrambleGrid() {
 
       //Signature
       var VER_MAJ = 0;
-      var VER_MIN = 10;
+      var VER_MIN = 15;
 
       var SIGNATURE = [
         0x69,
@@ -899,7 +899,6 @@ function scrambleGrid() {
         applySwitchPatch(SAVEFILE);
       }
 
-      //Save file
       STATUS_MSG.innerHTML += STATUS_CHECK;
       STATUS_MSG.innerHTML = "Preparing download...";
 
