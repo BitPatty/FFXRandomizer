@@ -1,0 +1,99 @@
+<div class="generator">
+  <div class="generator-row">
+    <div class="generator-title">
+      <label for="version-select">
+        Version:
+      </label>
+    </div>
+    <div class="generator-input">
+      <select name="version-select" id="version-select">
+        <option value="PC" selected>PC HD Remaster</option>
+        <option value="PS2NA" disabled>PS2 NTSC-U (North America)</option>
+        <option value="Switch">Nintendo Switch</option>
+      </select>
+    </div>
+  </div>
+  <div class="generator-row">
+    <div class="generator-title">
+      <label for="tidus-name">
+        Tidus Name*:
+      </label>
+    </div>
+    <div class="generator-input">
+      <input name="tidus-name" id="tidus-name" type="text" value="Tidus">
+    </div>
+  </div>
+  <div class="generator-row">
+    <div class="generator-title">
+      <label for="grid-select">
+        Grid-Type:
+      </label>
+    </div>
+    <div class="generator-input">
+      <select name="grid-select" id="grid-select">
+        <option value="Standard" selected>Standard Grid</option>
+        <option value="Expert">Expert Grid</option>
+      </select>
+    </div>
+  </div>
+  <div class="generator-row">
+    <div class="generator-title">
+      <label for="ost-select">
+        Soundtrack:
+      </label>
+    </div>
+    <div class="generator-input">
+      <select name="ost-select" id="ost-select">
+        <option value="Original" selected>Original</option>
+        <option value="Arranged">Arranged</option>
+      </select>
+    </div>
+  </div>
+  <div class="generator-row">
+    <div class="generator-title">
+      <label for="scramble-stats">
+        Shuffle Stats:
+      </label>
+    </div>
+    <div class="generator-input">
+      <input name="scramble-stats" id="scramble-stats" type="checkbox">
+    </div>
+  </div>
+  <div class="generator-row">
+    <div class="generator-title">
+      <label for="scramble-abilities">
+        Shuffle Abilities:
+      </label>
+    </div>
+    <div class="generator-input">
+      <input name="scramble-abilities" id="scramble-abilities" type="checkbox">
+    </div>
+  </div>
+  <div class="generator-row">
+    <div class="generator-title">
+      <label for="enable-flee">
+        Enable Flee for Tidus:
+      </label>
+    </div>
+    <div class="generator-input">
+      <input name="enable-flee" id="enable-flee" type="checkbox">
+    </div>
+  </div>
+  <div class="generator-row">
+    <div class="generator-title">
+      <button type="button" onclick="scrambleGrid()" class="primary">Generate Savefile</button>
+    </div>
+    <div class="generator-input">
+      <div id="generator-status"></div>
+    </div>
+  </div>
+</div>
+<br />
+<div>
+  <h3>* Valid special characters for naming Tidus:</h3>
+  <br />
+  <p class="mono dark padded">
+    " ! ; # $ % & ' ( ) * + , - . / : ; &lt; = ? [ ; ] ^ _ { | } ~ · 【 】 ♪ ♥ “ ” ‒ ↑ ↓ ← → « ° » ¿ À Á Â Ä Ç È É Ê Ë Ì Í Î Ï Ñ Ò
+    Ó Ô Ö Ù Ú Û Ü Ü β à á â ä ç è é ê ë ì í î ï ñ ò ó ô ö ù ú û ü , ƒ „ … ™ § © ® ± ² ³ ¼ ½ ¾ × ÷ ★ ☆ ∞
+  </p>
+</div>
